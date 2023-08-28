@@ -1,0 +1,33 @@
+/* para indicar el color cuando este se encuentra seleccionado u active */
+.navbar .active{
+    color:#08b6e7;
+
+}
+/* para el color de los textos en el navbar  */
+.nav-bar-link{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+     
+  }
+  /* para ver el color y border cuando se señala algun elemento dentro del navbar */
+  .nav-bar-link:hover {
+    background-color: #3acbc9;
+    border-radius: 15px;
+    transition: all 0.2s ease-out;
+  } 
+
+  /* INTRANET navbar-link */
+  /* para el color de los textos en el navbar  */
+.nav-bar-link-intranet{
+    color: rgb(12, 12, 12);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+     
+  }
+  /* para ver el color y border cuando se señala algun elemento dentro del navbar */
+  .nav-bar-link-intranet:hover {
+    background-color: #0ddf0a;
+    border-radius: 15px;
+    transition: all 0.2s ease-out;
+  }
