@@ -15,10 +15,11 @@ const firestore=getFirestore(dbapp);
 export const UsuarioContext =createContext()
 
 export  function UsuarioProvider(props) {
+
+    
+
   const [user, setUser] = useState(null)
-
-
-  // PARA DETECTAR USUARIO
+  // PARA DETECTAR USUARIO ****
   async function getRol(uid) {
     //crea una referencia la documento
     const docuRef = doc(firestore, `usuarios/${uid}`);
@@ -54,9 +55,9 @@ export  function UsuarioProvider(props) {
         }
     })
 
-    //FIN DETECTAR USUARIO
+    //FIN DETECTAR USUARIO ***
   return (
-    <UsuarioContext.Provider value={{user}} >
+    <UsuarioContext.Provider value={{user,setUser}} >
       {props.children}
     </UsuarioContext.Provider>
   )

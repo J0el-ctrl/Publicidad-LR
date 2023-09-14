@@ -7,3 +7,6 @@ export * from "./Eventos";
 export * from "./Publicaciones";
 export * from "./Aventuras";
 export * from "./Ampay";
+export * from "./TiendaProducto";
+//para gestionar el commercio 
+export * from "./eCommerce";

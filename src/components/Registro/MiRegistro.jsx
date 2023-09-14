@@ -63,9 +63,7 @@ export  function MiRegistro() {
             <br />
         </form>
 
-        <button className="btn btn-success">
-            Registrar
-        </button>
+      
     </section>
   )
 }

@@ -61,7 +61,7 @@ export  function NavbarOut(props) {
            <NavLink className="nav-bar-link" aria-current="page" to="/ampay">Ampay</NavLink>
         </li>
         <li>
-           <NavLink className="nav-bar-link" aria-current="page" to="/tienda">Tienda</NavLink>
+           <NavLink className="nav-bar-link" aria-current="page" to="/tiendaproducto">Tienda</NavLink>
         </li>
       </ul>
       <div className="d-grid gap-2 d-md-flex justify-content-md-end" >
