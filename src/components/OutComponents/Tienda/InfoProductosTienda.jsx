@@ -31,7 +31,7 @@ export  function InfoProductosTienda() {
     //funcion para agregar producto al carrito
     function addToCard(){
       //guarda todo lo que tenga carrito y adicional lo que tenga productoInfo||crea un nuevo array con todo lo que tenfa el estado carrito y el estado productoInfo
-      setCarrito([...carrito,productoInfo])
+      setCarrito([...carrito,productoInfo]);
     }   
     
 
@@ -48,7 +48,7 @@ export  function InfoProductosTienda() {
     <MiImagenInfo src={productoInfo?.images[0]}  alt={productoInfo?.name} />
    
 </div>
- <AcionEnInfoProductos className=''>
+ <AcionEnInfoProductos>
        <button className='btn btn-success ' onClick={addToCard} >AÑADIR A CARRITO </button>
        
      
