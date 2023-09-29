@@ -53,6 +53,7 @@ display:flex;
 flex-direction:row;
 flex-wrap:wrap;
 justify-content:space-evenly;
+gap:20px;
 
 `;
 const MiImagen=styled.img`

@@ -10,6 +10,8 @@ import createCheckOutCompra from '../../functions/createCheckoutComprar';
 import {Link} from 'react-router-dom';
 import { ListaProductosEnCarrito } from '../../components';
 
+import styled from 'styled-components';
+
 export  function Carrito() {
   //tratamos el useContext de carrito
   const {carrito}=useContext(CarritoContext);
@@ -38,8 +40,17 @@ export  function Carrito() {
       ) : (
         carrito?.map((producto) => <ListaProductosEnCarrito producto={producto} key={producto.id} />)
       )}
+      <BotonesDeAccion className='container py-5'>
         <button onClick={isBuyCarrito} className='btn btn-success'>COMPRAR AHORA</button>
-      <Link  className='btn btn-warning' to="/tiendaproducto" >Volver a tienda </Link>
+         <Link  className='btn btn-warning' to="/tiendaproducto" >Volver a tienda </Link>
+      </BotonesDeAccion>
     </>
   );
 }
+
+const BotonesDeAccion=styled.div`
+  display:flex;
+  justify-content:space-evenly;
+  align-items:center;
+  flex-wrap:wrap;
+`;

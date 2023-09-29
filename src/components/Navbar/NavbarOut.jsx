@@ -81,6 +81,13 @@ const {carrito}=useContext(CarritoContext);
               <AiOutlineShoppingCart size={30} />
             </Link>
         </li>
+        {
+          user? <li>
+          <NavLink className="nav-bar-link" aria-current="page" to="/perfil">Mis Compras</NavLink>
+       </li>:
+       null
+        }
+       
       </ul>
       <div className="d-grid gap-2 d-md-flex justify-content-md-end" >
         {
